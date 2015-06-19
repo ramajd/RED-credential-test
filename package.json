@@ -1,0 +1,27 @@
+{
+  "name": "red-credential-test",
+  "version": "0.0.0",
+  "description": "simple application to test node-red credential system",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ramajd/RED-credential-test.git"
+  },
+  "keywords": [
+    "nodejs",
+    "node-red",
+    "test"
+  ],
+  "author": "Reza Alizadeh Majd",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ramajd/RED-credential-test/issues"
+  },
+  "dependencies": {
+    "node-red": "~0.10.10",
+    "express": "~4.12.4"
+  }
+}
