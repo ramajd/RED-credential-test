@@ -1,3 +1,4 @@
+/* global process */
 var http = require('http');
 var express = require('express');
 var RED = require('node-red');
@@ -13,10 +14,14 @@ var settings = {
 	functionGlobalContext : { }
 };
 
-RED.init(settings, settings);
+RED.init(server, settings);
 
 app.use(settings.httpAdminRoot, RED.httpAdmin);
 app.use(settings.httpNodeRoot, RED.httpNode);
 
 server.listen(8000);
-RED.start();
+RED.start().then(function () {
+	console.log('app started');
+});
+
+
