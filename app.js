@@ -33,8 +33,12 @@ function initFlows() {
             "type": "mqtt-broker",
             "broker": "localhost",
             "port": "1883",
-            "clientid": "client1"
+            "clientid": "client1", 
             //how can I pass credentials here in flow array?!!
+            "credentials": {
+                "user": "client1",
+                "password": "pass1"
+            }
         },
         {
             "id": "459e1943.d0745",
